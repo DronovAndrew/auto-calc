@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container mt-5">
+        <ul class="nav nav-tabs" id="myTabs">
+          <li class="nav-item">
+            <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1">ЛЕГКОВЫЕ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2">США</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3">ГРУЗОВЫЕ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4">ЭЛЕКТРО</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tab5-tab" data-toggle="tab" href="#tab5">ТЯГАЧ | ПОЛУПРИЦЕП</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="tab6-tab" data-toggle="tab" href="#tab6">МОТО</a>
+          </li>
+        </ul>
+      
+        <div class="tab-content mt-2">
+          <div class="tab-pane fade show active" id="tab1">
+            <form>
+                <div>
+                    <label>Тип двигателя:</label>
+                    <input type="radio" name="engType"/>-бензиновый
+                    <input type="radio" name="engType"/>-дизельный
+                </div>
+                <div>
+                    <label>Объем двигателя:</label>
+                    <input type="number" placeholder="1598"/>
+                </div>
+                <div>
+                    <label>Год пр-ва:</label>
+                    <select>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Стоимость авто:</label>
+                    <input type="number"/>
+                    <select>
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>PLN</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Импортер:</label>
+                    <input type="radio" name="importer"/>-физ. лицо
+                    <input type="radio" name="importer"/>-юр. лицо
+                </div>
+                <div>
+                    <label>Сертификат EUR.1:</label>
+                    <input type="radio" name="sert"/>-нет
+                    <input type="radio" name="sert"/>-да
+                </div>
+                <button>Рассчитать</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="tab2">
+            <form>
+                <div>
+                    <label>Тип двигателя:</label>
+                    <select>
+                        <option>бензиновый</option>
+                        <option>дизельный</option>
+                        <option>электро</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Объем двигателя:</label>
+                    <input type="number" placeholder="1598"/>
+                </div>
+                <div>
+                    <label>Год пр-ва:</label>
+                    <select>
+                        <option>2024</option>
+                        <option>2023</option>
+                        <option>2022</option>
+                        <option>2021</option>
+                        <option>2020</option>
+                        <option>2019</option>
+                        <option>2018</option>
+                        <option>2017</option>
+                        <option>2016</option>
+                        <option>2015</option>
+                        <option>2014</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                        <option>2011</option>
+                        <option>2010</option>
+                        <option>2009</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Ставка на аукционе:</label>
+                    <input type="number"/>
+                    <select>
+                        <option>USD</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Страховка:</label>
+                    <input type="checkbox" name="insurance"/>-полная потеря
+                    <input type="checkbox" name="insurance"/>-доп. повреждения
+                </div>
+                <button>Рассчитать</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="tab3">
+            <form>
+                <div>
+                    <label>Состояние:</label>
+                    <input type="radio" name="state"/>-новый
+                    <input type="radio" name="state"/>-б/у
+                </div>
+                <div>
+                    <label>Импортер:</label>
+                    <input type="radio" name="importer"/>-физ. лицо
+                    <input type="radio" name="importer"/>-юр. лицо
+                </div>
+                <div>
+                    <label>Сертификат EUR.1:</label>
+                    <input type="radio" name="sert"/>-нет
+                    <input type="radio" name="sert"/>-да
+                </div>
+                <div>
+                    <label>Тип двигателя:</label>
+                    <input type="radio" name="engType"/>-бензиновый
+                    <input type="radio" name="engType"/>-дизельный
+                </div>
+                <div>
+                    <label>Объем двигателя:</label>
+                    <input type="number" placeholder="1598"/>
+                </div>
+                <div>
+                    <label>Возраст авто:</label>
+                    <select>
+                        <option>до 5 лет</option>
+                        <option>5-8 лет</option>
+                        <option>более 8 лет</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Грузоподъемность:</label>
+                    <select>
+                        <option>до 5 тонн</option>
+                        <option>5-20 тонн</option>
+                        <option>более 20 тонн</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Стоимость авто:</label>
+                    <input type="number"/>
+                    <select>
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>PLN</option>
+                    </select>
+                </div>
+                <button>Рассчитать</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="tab4">
+            <form>
+                <div>
+                    <label>Тип авто:</label>
+                    <input type="radio" name="carType"/>-легковой
+                    <input type="radio" name="carType"/>-грузовой
+                </div>
+                <div>
+                    <label>Импортер:</label>
+                    <input type="radio" name="importer"/>-физ. лицо
+                    <input type="radio" name="importer"/>-юр. лицо
+                </div>
+                <div>
+                    <label>Сертификат EUR.1:</label>
+                    <input type="radio" name="sert"/>-нет
+                    <input type="radio" name="sert"/>-да
+                </div>
+                <div>
+                    <label>Стоимость авто:</label>
+                    <input type="number"/>
+                    <select>
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>PLN</option>
+                    </select>
+                </div>
+                <button>Рассчитать</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="tab5">
+            <form>
+                <div>
+                    <label>Состояние:</label>
+                    <input type="radio" name="state"/>-новый
+                    <input type="radio" name="state"/>-б/у
+                </div>
+                <div>
+                    <label>Импортер:</label>
+                    <input type="radio" name="importer"/>-физ. лицо
+                    <input type="radio" name="importer"/>-юр. лицо
+                </div>
+                <div>
+                    <label>Сертификат EUR.1:</label>
+                    <input type="radio" name="sert"/>-нет
+                    <input type="radio" name="sert"/>-да
+                </div>
+                <div>
+                    <label>Стоимость авто:</label>
+                    <input type="number"/>
+                    <select>
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>PLN</option>
+                    </select>
+                </div>
+                <button>Рассчитать</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="tab6">
+            <form>
+                <div>
+                    <label>Объем двигателя:</label>
+                    <input type="number" placeholder="1598"/>
+                </div>
+                <div>
+                    <label>Импортер:</label>
+                    <input type="radio" name="importer"/>-физ. лицо
+                    <input type="radio" name="importer"/>-юр. лицо
+                </div>
+                <div>
+                    <label>Сертификат EUR.1:</label>
+                    <input type="radio" name="sert"/>-нет
+                    <input type="radio" name="sert"/>-да
+                </div>
+                <div>
+                    <label>Стоимость авто:</label>
+                    <input type="number"/>
+                    <select>
+                        <option>EUR</option>
+                        <option>USD</option>
+                        <option>PLN</option>
+                    </select>
+                </div>
+                <button>Рассчитать</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    
+    <table class="container mt-5" border="5" style="border-color: yellow; background: rgb(241, 241, 142);">
+        <thead>
+          <tr>
+            <th>Вид платежа</th>
+            <th>Основна начисления</th>
+            <th>Ставка</th>
+            <th>Сумма</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Пошлина</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Акциз</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>НДС</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ВСЕГО</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+      
+      </body>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
